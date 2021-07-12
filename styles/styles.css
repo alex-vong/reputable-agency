@@ -1,3 +1,163 @@
+
+
 @import 'meyers-reset.css';
 @import 'reset.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+ @font-face {
+    font-family: 'Artefak Clean Typeface Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Artefak Clean Typeface Regular'), url('../font/artefak/Artefak Clean Typeface.woff') format('woff');
+    }
+
+ @font-face {
+    font-family: 'Artefak Vintage Typeface Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Artefak Clean Typeface Regular'), url('../font/artefak/ArtefakVintageTypeface-yw1XV.woff') format('woff');
+    }
+
+:root {
+	--site-gray:  #282C2D;
+	--site-yellow:  #C4A35A;
+	--site-light:  #F6F6F6;
+}
+
+picture {
+	max-width:  100px;
+	min-width:  100px;
+}
+
+
+masthead {
+	font-family: 'Major Mono Display', monospace;
+
+}
+
+navbar {
+	display: inline-block;
+	background-color: var(--site-gray);
+
+}
+
+.ra-logo {
+	display: flex;
+	max-width:  95%;
+	margin:  auto;
+	justify-content: space-around;
+}
+
+.ra-logo picture, .ra-logo h1 {
+	flex: 1;
+}
+
+.site-title {
+	font-size:  clamp(35px, 8vw, 50px);
+	text-align: center;
+	padding:  10px;
+	color:  var(--site-yellow);
+
+}
+
+.site-title::first-letter, .first-letter {
+	font-size: 60px;
+}
+
+h4 {
+	color:  var(--site-yellow);
+	padding:  30px 20px 20px;
+	text-align: center;
+	font-size:  20px;
+}
+
+.landing-message {
+	padding:  30px 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+
+}
+
+h2 {
+    font-family: 'Artefak Vintage Typeface Regular';
+    font-size:  60px;
+    text-align: center;
+    color:  var(--site-yellow);
+
+}
+
+.circle {
+	margin: 10px;
+	height:  40px;
+	width: 40px;
+	background-color: var(--site-yellow);
+	/*border:  2px solid var(--site-yellow);*/
+	border-radius: 50%;
+	text-align: center;
+}
+
+
+/*Mission Statement Card*/
+
+.ms-section-card {
+	color:  var(--site-yellow);
+
+}
+
+.mission-statement, h3 {
+	margin:  20px;
+}
+
+h3 {
+	font-family: 'Artefak Vintage Typeface Regular';
+	font-size:  40px;
+
+
+}
+
+.statement {
+  font-family: 'Artefak Clean Typeface Regular';
+	background-color: var(--site-gray);
+	padding:  20px;
+	font-size:  20px;
+
+}
+
+.mission-statement {
+		line-height: 1.5;
+}
+
+a {
+	border:  2px solid var(--site-yellow);
+	text-align: center;
+	padding:  5px 15px;
+	max-width:  50%;
+	margin:  20px auto;
+}
+
+.to-client-section .statement {
+	background-color: var(--site-light);
+}
+
+.to-client-section h3 {
+	margin:  20px 0;
+	text-align: center;
+	color:  var(--site-yellow);
+}
+
+.to-client-section .mission-statement {
+	color:  var(--site-gray);
+}
+
+
+
+
+
+
+
+
 
